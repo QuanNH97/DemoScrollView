@@ -9,8 +9,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate {
-    
+class ViewController: UIViewController {
     var webView: WKWebView!
 
     override func viewDidLoad() {
@@ -21,11 +20,15 @@ class ViewController: UIViewController, WKNavigationDelegate {
         webView.load(request)
     }
 
+}
+
+extension ViewController: WKNavigationDelegate {
+    
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.navigationDelegate = self
         view = webView
     }
+    
 }
-
