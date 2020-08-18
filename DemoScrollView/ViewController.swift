@@ -20,11 +20,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = DetailViewController()
         vc.nameDetail = names[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
-        return indexPath
     }
 
     @IBOutlet weak var simpleTableView: UITableView!
