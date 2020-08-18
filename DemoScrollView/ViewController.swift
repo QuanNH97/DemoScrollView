@@ -8,8 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
     var names: [String] = ["Quân", "Trung", "Luận", "Minh", "Long", "Dũng"]
+    
+    @IBOutlet weak var simpleTableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        simpleTableView.delegate = self
+        simpleTableView.dataSource = self
+    }
+
+}
+
+extension ViewController: UITableViewDelegate {}
+
+extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return names.count
     }
@@ -25,16 +40,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc.nameDetail = names[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
-
-    @IBOutlet weak var simpleTableView: UITableView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        simpleTableView.delegate = self
-        simpleTableView.dataSource = self
-    }
-
-
 }
-
