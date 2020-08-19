@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84376C2824ECDB0B00A62478 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84376C2724ECDB0B00A62478 /* AddViewController.swift */; };
 		847B1FDE24EB68BB0087AF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B1FDD24EB68BB0087AF58 /* AppDelegate.swift */; };
 		847B1FE224EB68BB0087AF58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B1FE124EB68BB0087AF58 /* ViewController.swift */; };
 		847B1FE524EB68BB0087AF58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847B1FE324EB68BB0087AF58 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84376C2724ECDB0B00A62478 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		847B1FDA24EB68BB0087AF58 /* DemoScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847B1FDD24EB68BB0087AF58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847B1FE124EB68BB0087AF58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				847B1FEB24EB68BC0087AF58 /* Info.plist */,
 				847B1FF124EB6EA30087AF58 /* NamesTableViewCell.swift */,
 				847B1FF324EB750B0087AF58 /* DetailViewController.swift */,
+				84376C2724ECDB0B00A62478 /* AddViewController.swift */,
 			);
 			path = DemoScrollView;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84376C2824ECDB0B00A62478 /* AddViewController.swift in Sources */,
 				847B1FE224EB68BB0087AF58 /* ViewController.swift in Sources */,
 				847B1FDE24EB68BB0087AF58 /* AppDelegate.swift in Sources */,
 				847B1FF224EB6EA30087AF58 /* NamesTableViewCell.swift in Sources */,

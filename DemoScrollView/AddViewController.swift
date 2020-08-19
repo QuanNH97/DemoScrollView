@@ -1,20 +1,30 @@
 //
-//  DetailViewController.swift
+//  AddViewController.swift
 //  DemoScrollView
 //
-//  Created by Quan Nguyen on 8/18/20.
+//  Created by Quan Nguyen on 8/19/20.
 //  Copyright © 2020 quannh. All rights reserved.
 //
 
 import UIKit
 
-class DetailViewController: UIViewController {
-    var nameDetail: String = ""
-    @IBOutlet weak var nameLabel: UILabel!
+class AddViewController: UIViewController {
+
+    @IBAction func saveButton(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBOutlet weak var nameField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         // Do any additional setup after loading the view.
-        nameLabel?.text = nameDetail
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ViewController
+        guard let newName = nameField.text else { return }
+        guard !newName.isEmpty else { return }
+        vc.names.append(newName)
     }
 
     /*

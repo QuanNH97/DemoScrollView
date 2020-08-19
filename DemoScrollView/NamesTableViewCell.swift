@@ -22,5 +22,26 @@ class NamesTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configCell(name: String) {
+        if name == "" {
+            nameLabel.isHidden = true
+        }
+//        else {
+//            nameLabel.isHidden = false
+//        }
+        nameLabel.text = name
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        nameLabel.isHidden = false
+    }
+    
+    func update(with newName: String) {
+        if let nameLabel = nameLabel {
+            nameLabel.text = newName
+        }
+    }
 
 }
