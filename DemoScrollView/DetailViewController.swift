@@ -11,15 +11,16 @@ import UIKit
 class DetailViewController: UIViewController {
 
     var nameDetail: String = ""
+    var imageName: String = ""
     
+    @IBOutlet weak var detailImage: UIImageView!
+    @IBOutlet weak var detailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        let label = UILabel(frame: CGRect(x: 150, y: 250, width: 200, height: 50))
-        label.text = nameDetail
-        label.font = label.font.withSize(30)
-        view.addSubview(label)
         // Do any additional setup after loading the view.
+        detailLabel?.text = nameDetail
+        let image = UIImage(named: nameDetail + ".png")
+        detailImage?.image = image
     }
     
 

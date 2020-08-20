@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8437936D24EE3A8800D18CDA /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437936C24EE3A8800D18CDA /* SectionHeaderView.swift */; };
 		847B1FDE24EB68BB0087AF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B1FDD24EB68BB0087AF58 /* AppDelegate.swift */; };
 		847B1FE224EB68BB0087AF58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B1FE124EB68BB0087AF58 /* ViewController.swift */; };
 		847B1FE524EB68BB0087AF58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847B1FE324EB68BB0087AF58 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8437936C24EE3A8800D18CDA /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		847B1FDA24EB68BB0087AF58 /* DemoScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847B1FDD24EB68BB0087AF58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847B1FE124EB68BB0087AF58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				847B1FEB24EB68BC0087AF58 /* Info.plist */,
 				847B1FF524EB7D8B0087AF58 /* CustomCollectionViewCell.swift */,
 				847B1FF724EB930A0087AF58 /* DetailViewController.swift */,
+				8437936C24EE3A8800D18CDA /* SectionHeaderView.swift */,
 			);
 			path = DemoScrollView;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				847B1FE224EB68BB0087AF58 /* ViewController.swift in Sources */,
 				847B1FF624EB7D8B0087AF58 /* CustomCollectionViewCell.swift in Sources */,
 				847B1FDE24EB68BB0087AF58 /* AppDelegate.swift in Sources */,
+				8437936D24EE3A8800D18CDA /* SectionHeaderView.swift in Sources */,
 				847B1FF824EB930A0087AF58 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
